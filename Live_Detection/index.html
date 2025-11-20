@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Live Detection Demo</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; max-width: 600px; }
+    .row { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Choose Model and Upload Image</h2>
+    <form method="post" enctype="multipart/form-data">
+      <div class="row">
+        <label><strong>Detection Model Type:</strong></label><br>
+        <label><input type="radio" name="model_type" value="yolo" checked> YOLOv8</label><br>
+        <label><input type="radio" name="model_type" value="cnn"> CNN</label>
+      </div>
+      <div class="row">
+        <input type="file" name="image" accept="image/*" required>
+      </div>
+      <div class="row">
+        <button type="submit">Upload & Detect</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

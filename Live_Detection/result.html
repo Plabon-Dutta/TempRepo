@@ -1,0 +1,18 @@
+{% if is_video %}
+    <h3>Result Video</h3>
+    <video width="800" controls>
+        <source src="{{ url_for('result_media', filename=result_media) }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+{% else %}
+    <h3>Result Image</h3>
+    <img src="{{ url_for('result_media', filename=result_media) }}" width="800">
+{% endif %}
+<p>{{ result_text }}</p>
+
+<!-- Add Test Another Button -->
+<div style="margin-top: 2em;">
+    <a href="{{ url_for('index') }}">
+        <button style="padding: 0.6em 1.2em; font-size: 1.1em;">Test Another</button>
+    </a>
+</div>
