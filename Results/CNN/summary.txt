@@ -1,0 +1,6 @@
+Classes (28): ['Corrosive', 'Dangerous', 'Explosive', 'Flammable-gas', 'Flammable-solid', 'Infectious-substance', 'Inhalation-hazard', 'Non-flammable-gas', 'Organic-peroxide', 'Oxygen', 'Poison', 'Radioactive', 'Spontaneously-combustible', 'bottle', 'cable', 'capsule', 'carpet', 'grid', 'hazelnut', 'leather', 'metal_nut', 'pill', 'screw', 'tile', 'toothbrush', 'transistor', 'wood', 'zipper']
+Train anomaly images: 4096; Hazmat aug images: 130
+Val anomaly images: 410; Val hazmat images: 13
+Test anomaly images (known classes): 1725; Test hazmat images: 13
+Classification - Acc: 0.9914, Prec(w): 0.9842, Rec(w): 0.9914, F1(w): 0.9877
+Anomaly - Acc @0.5: 0.2762; Best F1 threshold: 0.000, F1: 0.8398, P: 0.7238, R: 1.0000
